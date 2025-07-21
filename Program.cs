@@ -20,6 +20,7 @@ app.UseAuthorization();
 
 app.MapStaticAssets();
 
+//although the routing in Admin area use attribute routing, a default routing pattern is still suggested for Admin area here.
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}")
